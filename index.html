@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="pokeball.png" type="image/x-icon" >
+        <title>Pokemon Info</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="pokemon.css">
+        <video autoplay muted loop class="video">
+            <source src="pokemonIntro.mp4" type="video/mp4">
+        </video>
+
+        <div class="content1">
+            <h1 id="body" style="opacity: 0;" class="hStyle">Pokedex</h1>
+        </div>
+
+        <div class="content2">
+            <a href="pokemonProject.html">
+                <button class="button">Open</button>
+            </a>
+        </div>
+
+        <script type="text/javascript"> 
+            var opacity = 0; 
+            var intervalID = 0; 
+            window.onload = fadeIn; 
+            
+            function fadeIn() { 
+                setInterval(show, 200); 
+            } 
+            
+            function show() { 
+                var body = document.getElementById("body"); 
+                opacity = Number(window.getComputedStyle(body) 
+                                .getPropertyValue("opacity")); 
+                if (opacity < 1) { 
+                    opacity = opacity + 0.1; 
+                    body.style.opacity = opacity 
+                } else { 
+                    clearInterval(intervalID); 
+                } 
+            }
+
+            function welcomeMessage() {
+                alert("Welcome to Pokedex!");
+            }
+            welcomeMessage();
+
+            document.onclick = () => applyCursorRippleEffect(event); 
+
+            function applyCursorRippleEffect(e) {
+                const ripple = document.createElement("div");
+
+                ripple.className = "ripple";
+                document.body.appendChild(ripple);
+
+                ripple.style.left = `${e.clientX}px`;
+                ripple.style.top = `${e.clientY}px`; 
+
+                ripple.style.animation = "ripple-effect .4s  linear";
+                ripple.onanimationend = () => document.body.removeChild(ripple);
+            }
+        </script> 
+    </body>
+</html>

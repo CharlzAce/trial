@@ -1,0 +1,302 @@
+.hStyle{
+    color: #FFD700;
+    margin: 2px;
+    font-family: Tahoma;
+    font-size: 100px;
+    fill            : none;
+    stroke          : aqua;
+    stroke-width    : 10px;
+    stroke-linejoin : round;
+    text-shadow: 5px 5px #000000;
+}
+
+.pokeTitle {
+    text-align: center;
+    color: cyan;
+    margin: 2px;
+    font-family: Tahoma;
+    font-size: 100px;
+    fill            : none;
+    stroke          : aqua;
+    stroke-width    : 10px;
+    stroke-linejoin : round;
+    text-shadow: 8px 8px #000000;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+  
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content1{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 11%;
+    top: 6%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+}
+
+.content2{
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 16.5%;
+    height: 8%;
+    padding: 20x;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #000000;
+}
+  
+.button:hover {background-color: red}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.gradBg {
+    height: 8500px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, orange, yellow, yellowgreen, green, blue);
+  }
+
+.pokeBox {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.pokemon-image {
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: -20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+    background-color: lightblue;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
+}
+
+.pokeBox:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Arial';
+    margin: 10;
+    margin-bottom: -10px;
+    font-size: 17px;
+    color: cyan;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Arial';
+    margin: 10;
+    margin-bottom: -10px;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+}
+
+.powerTypeE {
+    border-radius: 25px;
+    background: yellow;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeG {
+    border-radius: 25px;
+    background: palegreen;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeP {
+    border-radius: 25px;
+    background: purple;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeF {
+    border-radius: 25px;
+    background: orangered;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeW {
+    border-radius: 25px;
+    background: #007FFF;
+    width: 100px;
+    height: 20px;  
+}
+.powerTypeGr {
+    border-radius: 25px;
+    background: #8C4831;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeN {
+    border-radius: 25px;
+    background: silver;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeFa {
+    border-radius: 25px;
+    background: pink;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeFl {
+    border-radius: 25px;
+    background: white;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypePs {
+    border-radius: 25px;
+    background: violet;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeD {
+    border-radius: 25px;
+    background: grey;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeI {
+    border-radius: 25px;
+    background: lightblue;
+    width: 100px;
+    height: 20px;  
+}
+
+.powerTypeDr {
+    border-radius: 25px;
+    background: purple;
+    width: 100px;
+    height: 20px;  
+}
+
+.grid-boxes {
+    display: flex;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 20px;
+    width: 1000px;
+    text-align: center;
+}
+
+.grid-boxes2 {
+    display: flex;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 20px;
+    width: 1000px;
+    text-align: center;
+}
+
+.grid-boxes3 {
+    display: flex;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 20px;
+    width: 1000px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.disFlex{
+    display: flex;
+    grid-gap: 10px;
+}
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid #ffffff59;
+}
+    
+@keyframes ripple-effect {
+    to {
+        transform:scale(15);
+        opacity: 0.01;
+    }
+}
+
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
